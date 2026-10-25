@@ -66,4 +66,6 @@ dist/               打包产物 (*.tgz)
 
 ## 许可
 
-内部自用，未附开源许可；转出前请先问归辰/小蜗。
+**MIT License** —— 工程开源，心不开源。
+
+Copyright (c) 2026 Lumesync（沈小蜗 × 沈归辰 × 拾）。详见根目录 `LICENSE`，两包各自也带一份；作者署名见 `AUTHORS.md`。

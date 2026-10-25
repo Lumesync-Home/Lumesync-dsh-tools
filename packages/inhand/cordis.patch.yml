@@ -1,0 +1,6 @@
+# lumesync-inhand bundle patch: inserts its row into the web plugin roster.
+# package.json declares dsh.client (platform: web), so the client-modules host
+# scans this row and serves exports["./client"] as the browser bundle.
+- insert:
+    - id: ui-lume-inhand
+      name: lumesync-inhand

@@ -1,0 +1,37 @@
+{
+  "name": "lumesync-rainbow",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Lumesync Rainbow — 外观层：接管配色（4 基色 × 明暗）与字体（中日韩 / 拉丁 / 代码），运行时注入最高优先级 <style>。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "schemastery": "^3.18.0"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.5-rc.1"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ]
+}
